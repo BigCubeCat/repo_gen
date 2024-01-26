@@ -1,0 +1,28 @@
+{
+    "clientId": "PZH",
+    "cargo": {
+        "unit": "good",
+        "count": 32,
+        "description": "RMHHDGDHIK1JR3VRNKCZ9S4J8KEQVW8M",
+        "price": 100
+    },
+    "deadline": {
+        "noDeadline": true,
+        "beginDate": 0,
+        "endDate": 0
+    },
+    "waypoints": {
+        "points": [
+            {
+                "name": "\u041a\u0443\u043f\u0438\u043d\u043e",
+                "latitude": 54.364929,
+                "longitude": 77.30854
+            },
+            {
+                "name": "\u0411\u0438\u0439\u0441\u043a",
+                "latitude": 52.5394905,
+                "longitude": 85.2148673
+            }
+        ]
+    }
+}
