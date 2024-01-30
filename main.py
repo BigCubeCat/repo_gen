@@ -1,3 +1,4 @@
+from random import random, choice
 from geopy.geocoders import Nominatim
 import json
 from req import make_post_request
@@ -35,7 +36,7 @@ def parse_towns():
 
         if location:
             result.append ({
-                "name": town,
+                "address": town,
                 "latitude": location.latitude,
                 "longitude": location.longitude
             })
@@ -60,7 +61,7 @@ def main():
     if not towns:
         return
     for i in range(COUNT):
-        generator = OrderGenerator(towns)
+        generator = OrderGenerator(towns, count_waypoints=2)
         print(make_post_request(URL, generator.get_request_body()).text)
 
 

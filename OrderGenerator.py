@@ -14,7 +14,9 @@ class OrderGenerator:
             "deadline": self.generate_deadline(),
             "waypoints": {
                 "points": self.generate_waypoints(self.count_waypoints)
-            }
+            },
+            "isSingle": False,
+            "done": False,
         }
 
     def shotrify(self, value: float) -> str:
